@@ -1,5 +1,10 @@
-'use client'
+import {ReactNode, MouseEventHandler} from 'react'
 
-export const Button = ({}) => {
-  return <button onClick={() => alert(`Hello from your app!`)}>Click me 🏔️</button>
+interface ButtonProps {
+  onClick: MouseEventHandler<HTMLButtonElement>
+  children: ReactNode
+}
+
+export const Button = ({onClick, children}: ButtonProps) => {
+  return <button onClick={onClick}>{children}</button>
 }
