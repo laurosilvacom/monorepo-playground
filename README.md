@@ -1,1 +1,1 @@
-# Monorepo Playground
+# Monorepo Playground 🏔️
